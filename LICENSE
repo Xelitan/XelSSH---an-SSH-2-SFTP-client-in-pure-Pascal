@@ -1,3 +1,5 @@
+XelSSH - an SSH-2 / SFTP client in pure Pascal
+
 MIT License
 
 Copyright (c) 2026 Xelitan
@@ -19,3 +21,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+-------------------------------------------------------------------------------
+Portions based on the work of other authors
+-------------------------------------------------------------------------------
+
+TweetNaCl
+  Daniel J. Bernstein, Bernard van Gastel, Wesley Janssen, Tanja Lange,
+  Peter Schwabe, Sjaak Smetsers - public domain. (Basis of the Ed25519 code.)
+
+OpenBSD bcrypt_pbkdf.c / blf.c
+  Ted Unangst, Niels Provos - ISC / BSD licenses. (The bcrypt_pbkdf and
+  eksblowfish algorithms were reimplemented after these sources; the Blowfish
+  tables, digits of pi, are computed by test/gen_blowfish.py.)
+
+Cryptographic primitives (SHA-2, HMAC, AES, AES-GCM, ChaCha20, Poly1305, X25519,
+ECDH, RSA/ECDSA verification, random numbers) come from XelSSL (MIT, Xelitan).
